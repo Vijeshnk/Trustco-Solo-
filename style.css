@@ -3,4 +3,131 @@
    This file contains the CSS styling for the Trustco landing page
 */
 
-/* Currently empty as per ticket requirements - styling will be added in future tickets */
+/* Global CSS Variables for Colors */
+:root {
+    --primary-color: #0056b3;
+    --secondary-color: #4a90e2;
+    --accent-color: #ff6b6b;
+    --text-color: #333333;
+    --light-text: #ffffff;
+    --background-color: #f8f9fa;
+    --light-gray: #eeeeee;
+    --dark-gray: #555555;
+  
+    /* Spacing scale (based on 8px) */
+    --space-xs: 0.5rem;   /* 8px */
+    --space-sm: 1rem;     /* 16px */
+    --space-md: 1.5rem;   /* 24px */
+    --space-lg: 2rem;     /* 32px */
+    --space-xl: 3rem;     /* 48px */
+  }
+  
+  /* Box Sizing Rule */
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  /* Base Body Styles */
+  body {
+    font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Typography */
+  h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: var(--space-sm);
+    line-height: 1.2;
+    font-weight: 700;
+    color: var(--primary-color);
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+  }
+  
+  h2 {
+    font-size: 2rem;
+  }
+  
+  h3 {
+    font-size: 1.75rem;
+  }
+  
+  h4 {
+    font-size: 1.5rem;
+  }
+  
+  h5 {
+    font-size: 1.25rem;
+  }
+  
+  h6 {
+    font-size: 1rem;
+  }
+  
+  p {
+    margin-top: 0;
+    margin-bottom: var(--space-sm);
+  }
+  
+  /* Links */
+  a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
+  }
+  
+  /* Container for consistent layout */
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: var(--space-sm);
+    padding-right: var(--space-sm);
+  }
+  
+  /* Section styling */
+  section {
+    padding: var(--space-lg) 0;
+  }
+  
+  /* Header and Footer styling */
+  header, footer {
+    background-color: var(--primary-color);
+    color: var(--light-text);
+    padding: var(--space-md) 0;
+  }
+  
+  /* Navigation styling */
+  nav {
+    margin-top: var(--space-sm);
+  }
+  
+  /* Button styling */
+  .btn {
+    display: inline-block;
+    padding: var(--space-xs) var(--space-sm);
+    background-color: var(--accent-color);
+    color: var(--light-text);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #e55c5c;
+    text-decoration: none;
+  }
